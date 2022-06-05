@@ -1,4 +1,4 @@
-import { Box, Button, Heading, HStack } from "@chakra-ui/react";
+import {  Button, Heading, HStack, Text } from "@chakra-ui/react";
 import React, { useContext } from "react";
 import { Authcontext } from "../context/Authcontext";
 import Status from "./Status";
@@ -8,8 +8,12 @@ const Navbar = () => {
 
   return (
     <div>
-      <HStack spacing='85%' m={'20px'}>
+      <HStack spacing='14%' m={'20px'}>
         <Heading color={"orange.400"}>Navbar</Heading>
+        <Text color={'green.400'} fontWeight={'600'} fontSize={'16px'}>Home</Text>
+        <Text color={'green.400'} fontWeight={'600'} fontSize={'16px'}>About</Text>
+        <Text color={'green.400'} fontWeight={'600'} fontSize={'16px'}>Profile</Text>
+        <Text color={'green.400'} fontWeight={'600'} fontSize={'16px'}>Gallery</Text>
 
         <Button
           as="button"
